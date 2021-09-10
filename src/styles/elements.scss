@@ -4,7 +4,17 @@
     justify-content: space-between;
     padding: 0 80px;
 }
-
+.login{
+    width: 800px;
+    height: 800px;
+    line-height: 800px;
+    margin: auto;
+    text-align: center;
+    color: #ff385c;
+}
+.empty-cell{
+    visibility: hidden;
+}
 @media only screen and (max-width: 942px) {
     .widgetsHolder {
         display: flex;

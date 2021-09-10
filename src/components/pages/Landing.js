@@ -12,7 +12,9 @@ export default function Landing() {
     const fetchData = async () => {
       console.log("==================================");
       //const { data } = (await ServicesApi.postData) < [] > ("yourpath", formData);
-      const { data } = await ServicesApi.getData("/products/category/"+catogaryName);
+      const { data } = await ServicesApi.getData(
+        "/products/category/" + catogaryName
+      );
       return data;
     };
 
@@ -32,10 +34,18 @@ export default function Landing() {
       });
   }, []);
   return (
-    <div className="widgetsHolder">      
+    <div className="widgetsHolder">
       {currentCatogary.map((item, i) => {
-        return <Card image={item.image} title={item.title} price={item.price}/>;
+        return (
+          <Card image={item.image} title={item.title} price={item.price} />
+        );
       })}
+      <div className="card empty-cell"></div>
+      <div className="card empty-cell"></div>
+      <div className="card empty-cell"></div>
+      <div className="card empty-cell"></div>
+      <div className="card empty-cell"></div>
+      <div className="card empty-cell"></div>
     </div>
   );
 }

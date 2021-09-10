@@ -7,8 +7,8 @@ export default function Landing() {
     const [search, setsearch] = searchApp;
   
   return (
-    <div>
-     You Need To Login to view protected area. Login component coming soon.......
+    <div className="login">
+     You Need To Login/Signup to view this content. Login component coming soon.......
     </div>
   )
 }

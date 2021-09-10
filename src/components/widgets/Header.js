@@ -30,7 +30,7 @@ export default function Header() {
         <div className="headerContainerLRight">
           <nav className="navclass">
             <div className="becomeHostHolder">
-              <a class="becomeHost" href="/host/homes">
+              <a class="becomeHost" href="/profile">
                 Become a host
               </a>
               <button
