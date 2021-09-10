@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useRef, useState } from "react";
 import { Link, useCurrentRoute } from "react-navi";
 import { GlobalContext } from "../../context/GlobalContext";
 import $ from "jquery";
+import icon from "../../styles/images/icon.jpg";
 import ServicesApi from "../../api/services";
 export default function Catogary() {
   const { findCatogaryName, findCatogary } = useContext(GlobalContext);
@@ -20,11 +21,11 @@ export default function Catogary() {
     $(".activeBar").css("width", elWidth + "px");
     let elLeft = $(".active").offset().left;
     $(".activeBar").css("left", elLeft + "px");
-    setCatogaryName($("#" + _id).text())
+    setCatogaryName($("#" + _id).text());
     const fetchData = async () => {
-      console.log("==================================");
-      //const { data } = (await ServicesApi.postData) < [] > ("yourpath", formData);
-      const { data } = await ServicesApi.getData("/products/category/"+$("#" + _id).text());
+      const { data } = await ServicesApi.getData(
+        "/products/category/" + $("#" + _id).text()
+      );
       return data;
     };
 
@@ -33,7 +34,6 @@ export default function Catogary() {
         console.log("error");
       })
       .then((data) => {
-        console.log("success!--");
         console.log(data);
         setCurrentCatogary(data);
         if (data != undefined) {
@@ -47,8 +47,7 @@ export default function Catogary() {
   useEffect(() => {
     const fetchData = async () => {
       const formData = { prop: "myprop" };
-      console.log("==================================");
-      //const { data } = (await ServicesApi.postData) < [] > ("yourpath", formData);
+
       const { data } = await ServicesApi.getData("/products/categories");
       return data;
     };
@@ -58,10 +57,8 @@ export default function Catogary() {
         console.log("error");
       })
       .then((data) => {
-        console.log("success!--");
-        console.log(data);
         setCatogary(data);
-        
+
         if (data != undefined) {
           //do something
         } else {
@@ -85,7 +82,7 @@ export default function Catogary() {
                 }}
               >
                 <img
-                  src="https://a0.muscache.com/pictures/ac09b78a-19c0-46fc-b604-fc90a8912864.jpg"
+                  src={icon}
                   alt=""
                 />
                 {item}

@@ -10,8 +10,6 @@ export default function Landing() {
   const [catogaryName, setCatogaryName] = findCatogaryName;
   useEffect(() => {
     const fetchData = async () => {
-      console.log("==================================");
-      //const { data } = (await ServicesApi.postData) < [] > ("yourpath", formData);
       const { data } = await ServicesApi.getData(
         "/products/category/" + catogaryName
       );
@@ -19,12 +17,8 @@ export default function Landing() {
     };
 
     fetchData()
-      .catch((e) => {
-        console.log("error");
-      })
+      .catch((e) => {})
       .then((data) => {
-        console.log("success!--");
-        console.log(data);
         setCurrentCatogary(data);
         if (data != undefined) {
           //do something

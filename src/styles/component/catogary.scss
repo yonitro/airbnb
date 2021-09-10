@@ -96,3 +96,9 @@ position: relative;
     padding: 0 20px 8px 20px;
   }
 }
+@media only screen and (max-width: 570px) {
+  .catogary ul li:last-child {
+   
+    display: none;
+  }
+}

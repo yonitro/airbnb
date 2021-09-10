@@ -8,7 +8,7 @@ import Landing from './components/pages/Landing'
 import Layout from './components/pages/Layout'
 import Login from './components/pages/Login'
 import Profile from './components/pages/Profile'
-import Services from './components/pages/Services'
+
 import Spinner from './components/widgets/Spinner'
 import './styles/index.scss';
 
@@ -22,10 +22,7 @@ const routes =
       title: "Login",     
       view: <Login />,
     }),
-    '/services': route({
-      title: "Services",     
-      view: <Services />,
-    }),
+
     "/profile": withAuthentication(
       route({
         title: "Profile",
