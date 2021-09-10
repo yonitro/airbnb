@@ -20,8 +20,8 @@ export default function Card(props) {
      
       </div>
       <div className="titlePrice">
-        <div className="title">Baoshan, Yunnan</div>
-        <div className="Price">£34 / night</div>
+        <div className="title">{props.title}</div>
+        <div className="Price">£{props.price}</div>
       </div>
       <div className="titleSubPrice">
         <div className="titleSub">809 miles away</div>

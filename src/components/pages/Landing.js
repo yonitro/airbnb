@@ -34,7 +34,7 @@ export default function Landing() {
   return (
     <div className="widgetsHolder">      
       {currentCatogary.map((item, i) => {
-        return <Card image={item.image}/>;
+        return <Card image={item.image} title={item.title} price={item.price}/>;
       })}
     </div>
   );
