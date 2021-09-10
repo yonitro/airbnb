@@ -1,0 +1,43 @@
+.footer{
+    width: 100%;
+    background: #f7f7f7;
+    padding: 0 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 80px;
+    box-sizing: border-box;
+    border-top: 1px solid #dddddd;
+}
+
+.footsection{
+    width: 24%;
+}
+.footTitle{
+    text-transform: uppercase;
+    font-weight: 500;
+    margin:40px 0 15px 0;
+}
+.footsection ul{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.footsection ul li{
+    margin: 10px 0; 
+} 
+.footsection ul li a{
+   
+} 
+
+@media only screen and (max-width: 942px) {
+    .footsection {
+      width: 49%;
+    }
+  }
+  @media only screen and (max-width: 570px) {
+    .footsection {
+      width: 99%;
+    }
+  }
