@@ -1,0 +1,98 @@
+.catogary {
+  width: 100%;
+position: relative;
+  padding: 0 80px 8px 80px;
+}
+.catogary ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.catogary ul li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+.catogary ul li {
+  display: inline-block;
+  height: 80px;
+  line-height: 60px;
+
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  outline: none;
+
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", sans-serif;
+  font-size: 14px;
+
+  font-weight: 600;
+
+  background: transparent;
+  color: rgb(113, 113, 113);
+  padding: 10px 0;
+  transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s,
+    -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  margin: 0 10px;
+}
+
+.catogary ul li a {
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  border-radius: 8px;
+  background: transparent;
+  color: rgb(113, 113, 113);
+  padding: 10px 0;
+  transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s,
+    -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+  position: relative;
+  
+}
+.catogary ul li a:hover {
+  background: rgb(247, 247, 247);
+}
+.catogary ul li a img {
+  width: 0;
+  height: 0;
+  position: relative;
+  top: 5px;
+  margin-right: 6px;
+  transition: width 0.2s, height 0.2s;
+}
+.catogary ul li a.active  {
+ 
+  
+  }
+.catogary ul li a.active img {
+  width: 20px;
+  height: 20px;
+  transition: 0.2s;
+}
+.activeBar {
+  width:102px;
+  border-bottom: 3px solid #222222;
+  position: absolute;
+  top: 70px;
+  transition: 0.2s;
+  left: 80px;
+}
+
+@media only screen and (max-width: 942px) {
+  .catogary {
+    
+    padding: 0 20px 8px 20px;
+  }
+}
