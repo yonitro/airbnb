@@ -10,6 +10,7 @@ export default function Card(props) {
 
   return (
     <div className="card">
+      XXXXXXXXXXXX
       <div className="cardImage">
           <img src={props.image}  />
          
