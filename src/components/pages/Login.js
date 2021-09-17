@@ -2,7 +2,7 @@ import React,{useContext} from 'react'
 import { Link, useCurrentRoute } from 'react-navi'
 import { GlobalContext } from "../../context/GlobalContext";
 
-export default function Landing() {
+export default function Login() {
     const { searchApp } = useContext(GlobalContext);
     const [search, setsearch] = searchApp;
   

@@ -3,9 +3,7 @@ import axios from 'axios'
 const instance = axios.create({
     baseURL: process.env.REACT_APP_API_BASE_URL,
     headers: {
-        'content-type':'application/octet-stream',
-        'x-rapidapi-host':'example.com',
-        'x-rapidapi-key': process.env.RAPIDAPI_KEY
+        'content-type':'application/octet-stream',        
     },
 });
 
